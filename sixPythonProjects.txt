@@ -1,0 +1,118 @@
+web scraping program
+get the image link of the profile image of a particular account/user. ask the user name to enter the username of a github account and return the image link of the account the user is using. 
+pip3 install requests
+pip3 install bs4
+
+import requests
+from bs4 import BeautifulSoup as bs
+github_user=input('Input Github User: ')
+url='https//github.com/'+github_user	#this makes it dynamic
+r=requests.get(url)
+soup=bs.(r.content,'html.parser')
+profile_image=soup.find('img',{'alt':'Avatar'})['src']
+print(profile_image)
+
+
+make this gui and on internet site or app
+------------------------------------
+
+renaming bulk files
+rename all the files in a folder to whatever name we give.
+
+impoprt os
+def main():
+	i=0
+	# this will give error: path="C:\Users\Aaryan\Documents\renameHere\codeTester"
+	path="C:/Users/Aaryan/Documents/renameHere/codeTester/"
+	for filename in os.listdir(path):
+		my_dest="img"+str(i)+".jpg"
+		my_source=path+filename
+		my_dest=path+my_dest
+		os.rename(my_source,my_dest)
+		i+=1
+if __name__=='__main__':
+	main()
+
+
+access linux system to code and save image automatically in a given new folder to save numbered ones..Hold on : from now on you will not be saving anymore, but will be making yoru own, and so just go there and make and note-draw them down to work on your own. So this won't be necessary. Images and things of others have copyright issues. licens open source and copyright and such laws. Change the open source things into your own products and tools that become proprietary.
+
+------------------------
+
+
+getting weather information
+
+openweathermaps.org	signup and login	grap the api key
+
+import requests
+from pprint import pprint
+API_Key=''	#paste here
+city=input("Enter a city: ")
+base_url="http://api.openweathermap.org/data/2.5/weather"+API_Key+"&q="+city
+weather_data=requests.get(base_url).json()
+pprint(weather_data)
+.......................
+
+countdown timer
+
+
+import time
+def countdown(t):
+	while t:
+		mins,secs=divmod(t,60)
+		timer='{:02d}:{:02d}'.format(mins,secs)
+		print(timer,end="\r")
+		time.sleep(1)
+		t-=1
+	print('Timer completed')
+t=input('Enter the time in seconds : ')
+countdown(int(t))
+
+----------------
+
+password generator
+
+import random
+print('Password Generator')
+chars='apoekfkoel8\90 anything'
+number=input('Number of passwords : ')
+number=int(number)
+length=input('Length of each password: ')
+length=int(length)
+print('\n passwords : ')
+for pwd in range(number):
+	passwords=''
+	for c in range(length):
+		passwords+=random.choice(chars)
+	print(passwords)
+-----------------------------------------
+
+
+qrcodes with python
+
+encoding and decoding qr code. coding qr code=creating a qr code, and filling in some data. 
+
+pip3 install qrcode
+
+import qrcode
+data='Don\'t forget ti subscribe'
+img=qrcode.make(data)
+img.save('C:/Users/Aaryan/Documents/QR codes/tests/myqrcode.png')
+# / instead of \ in python, even in windows
+
+qr=qrcode.QRCode(version=1,box-size=10, border=5)
+qr.add_data(data)
+
+qr.make(fit=True)
+img=qr.make_image(fill_color='red',back_color='white')
+img.save('C:/Users/Aaryan/Documents/QR codes/tests/myqrcode.png')
+
+
+#decoding
+pip3 install pyzbar
+
+from pyzbar.pyzbar import decode
+from PIL import Image
+img=Image.open('C:/Users/Aaryan/Documents/QR codes/tests/myqrcode.png')
+result=decode(img)
+print(result)
+-------------
