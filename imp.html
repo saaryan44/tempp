@@ -1,0 +1,8 @@
+<html><body><p>first paragraph</p><p></p><p>third paragraph</p><p>fourth para</p>
+
+<button onclick="fx()">fetch req</button>
+<script>const a=document.createElement("img"); a.width=300;a.height=250;a.src="https://th.bing.com/th/id/OIP.ZL-_N-MQfRFvoVOIpnLpBgHaEo?pid=ImgDet&rs=1";document.querySelector("p:nth-child(2)").appendChild(a);
+
+
+const fx=()=>{fetch('site.com').then(a=>a.json()).then(a=>alert(a.toString())).catch(d=>alert("Error in fetching..."))};
+</script></body></html>
