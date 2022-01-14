@@ -1,0 +1,365 @@
+ title is used by screen readers to read out what the content of the iframe is. height="300"; by default, there is border. style="border:none;" ; target frame for a link. target attribute of link. name attribute of iframe. <iframe src="/index.html" title="index page" name="index" /></iframe><p><a href="plop.com">go pagal</a></p>; 
+
+javascript. dynamism. interacitivity. <script> tag. client-side script. either contain script statements or point to script file through src attribute. image manipulation. form validation. dynamic changes of content. 
+
+select an element. document.getElementById("thisone").innerHTML="hello world";
+
+const x=document.getElementById("dd"); x.style.fontSize="25px"; x.style.color="red"; x.style.backgroundColor="yellow"; 
+
+document.getElementById("imagek").src="picture.gif";
+
+
+<noscript>alternate content to be displayed to users that have disabled scripts in their browser or have a browser that does not support scripts.</noscript>
+
+
+file paths. describe the location of a file in a web-site program's folder structure. linking to external files (web pages, images, style sheets, javascripts). 
+
+head element. container (title, style, meta, link, script, base). metadata. about html document. not displayed. 
+
+<title>. search engine optimization. search engine algorithms. listing order in search result. browser toolbar title. title for page when it is added to favorites. title for the page in search-engine results. accurate and meaningful. 
+
+<link>. relationship between current document and an external resource. <link rel="stylesheet" href="mystle.css" />; 
+
+<meta>. character set. page description. keywords. author of the document. viewport settings. used by browsers, search engines, and web services. <meta charset="UTF-8" /> <meta name="keywords" content="HTML, CSS, Javascript" /> <meta name="description" content="hello world" /> <meta name="author" content="me" /> <meta http-equiv="refresh" content="30" />; refresh document every 30 seconds (sort of like react automatic rendering...). <meta name="viewport" content="width=device-width, initial-scale=1.0" />. setting the viewport to make the website look good on all devices. 
+
+viewport. user's visible area of a web page. varies with device. width=device-width. follow screen-width of the device. initial-scale=1.0. initial zoom level when the page is first loaded by the browser. 
+
+<base>. based url and/or target for all relative url's in a page. href or target attribute required. only one such element per document. <head><base href="https://www.kola.com" target="_blank" /></head>
+
+layout elements. semantic elemnts. define different parts of a page. <header>. <nav> set of navigation links. <section>. <article> independent, self-contained content. <aside> content aside from the content, like a sidebar. <footer>. <details> additional ones. <summary> heading for <details> element. 
+
+layout techniques. multicolumn layouts. css framework. css float property. css flexbox. css grid. html sematic tags.
+
+css framework. bootstrap5. fast creation. most declarative. 
+
+float. floating elements are tied to the document flow. float and clear.
+
+flexbox. elements have predictability when the page layout must accomodate different screen sizes and different display devices. 
+
+grid layout module. grid-based layout system. rows and columns. 
+
+responsive web design. creating web pages for all devices. automatically adjust for different screen sizes and viewports. html and css for this automation. resizes, hide, shrink, enlarge a site. 
+
+responsive images. scale nicely to fit any browser size. css width of 100% => the image will be responsive and will scale up and down. <img src="hi.gif" style="width:100%" /> . the image can be scaled up to be larger than its original size.
+
+max-width. 100%=> the image will scale down if it has to, but will never scale up to be larger than its original size. <img src="hi.gif" style="max-width:100%; height:auto;" />
+
+show differnt images for differnt viewport widths. <picture> element.
+
+vw. viewport width unit. the text size will follow the size of the browser window. <h1 style="font-size:10vw">hello world</h1>
+
+viewport is the browser window size. 1vw=1% of viewport width. 50cm wide viewport => 1vw is 0.5 cm.
+
+media queries. responsive web pages. define different styles for differnt browser sizes. adding breakpoints at certain pixels. @media screen and (max-width:800px){div{width:100%;}} The width is 100% when the viewport is 800px or smaller.
+
+define user input and computer code. <code>x=5;y=6;z=x+y;</code> . piece of computer code. extra-whitespace and line-breaks not preserved.
+
+kbd. define keyboard input. default monospace font. <p> press <kbd> Ctrl + S</kbd> </p>.
+
+<samp>. sample output from a computer program. <p><samp>this is some output</samp></p>. 
+
+<var>. variable in programming expression or mathematical expression. italic. <p>12 <var>x</var> is the amount</p>.
+
+semantic elements. elements with meanings to both browser and developer. 
+non-sematic elements. tell us nothing about its content. <div>. <span>. 
+semantic elements. <form>. <table>.<article>. define the content.
+
+<section>. a thematic grouping of content, typically with a heading. chapters. introduction. news items. contact information. a web page could be split into sections for introduction, content, and contact information. 
+
+<article>. should make sense on its own, and should be distributable independently from the rest of the website. forum posts. blog posts. user comments. product cards. newspaper articles. 
+
+<header>. containre for introductory content or a set of navigational links. one or more heading elements. logo or icon. authorship information. cannot be placed inside <footer>, <address> and another <header> elements. <article><header><h1>What does x do?</h1><p>i don;t care.</p></header><p>hello world</p></article>
+
+<footer>. authorship information. copyright information. contanct information. sitemap. back to top links. related documents. <footer><p>Author : pagal aadmi</p><p><a href="mailto:allo@gobhi.com">allo@gobhi.com</a></p>
+
+<aside>. indirectly related to the surrounding content. 
+
+<figure>. self-contained content. illustrations. diagrams. photos. code listings. 
+<figurecaption>. caption for a <figure> element. first or last child.
+<img>. defines the actual image/illustration.
+<figure><img src="plop.gif" alt="plop" /><figcaption>gomu gomu no</figcaption></figure>
+
+a semantic web allows data to be shared and reused across applications, enterprises and communities. 
+
+fore readability, add two spaces of indentation. do not user tab key.
+
+reserved characters in html. character entities. &entity_name. #entity_number. 
+&nbsp; . will not break into a new line. two words separated by a non-breaking space will stick together. prevent browsers from truncating spaces. &#160;.
+non-breaking hyphen. &#8209; . does not break into a new line.
+less than. &#60;
+greater than. &#62;
+ampersand. &#38;
+double quotation mark. &#34;
+single quotation mark. &#39;
+cent. &#162;
+pound. &#163;
+yen. &#165;
+euro. &#8364;
+copyright. &#169;
+registered trademark. &#174;
+
+
+diacritical mark. glyph added to a letter. grave accent. acute accents. 
+a&#768;
+a&#769;
+a&#770;
+a&#771;
+
+symbols not present on keyboard. entities. mathematical. technical. currency. 
+mathematical. 
+for all. &#8704;
+partial differential. &#8706;
+there exists. &#8707;
+empty set. &#8709;
+nabla. &#8711;
+element of. &#8712;
+not an element of. &#8713;
+contais as member. &#8715;
+n-ary product. &#8719;
+n-ary summation. &#8721;
+
+&# ;
+rightwards arrow over leftwards arrow. 8644 or 21C4
+upwards arrow leftwards of downwards arrow. 8645
+leftwards arrow over rightwards arrow. 8646
+leftwards paired arrow. 8647
+upwards paired arrows. 8648
+rightwards paired arrows. 8649
+downwards paired arrows. 8650
+
+black sun with rays. 9728
+cloud. 9729
+umbrella. 9730
+snowman. 9731
+comet. 9732
+black star. 9733
+white star. 9734
+lightning. 9735.
+thunderstorm. 9736
+hot beverage. 9749
+white left pointing index. 9756
+white up pointing index. 9757
+white right poiting index. 9758
+white down pointing index. 9759
+skull and crossbones. 9760
+biohazard sign. 9763
+aries. 9800
+white chess king. 9812
+white chess rook. 9814
+white chess bishop. 9815
+white chess knight. 9816
+white chess pawn. 9817
+quarter note. 9833
+eigth note. 9834
+beamed eigth notes. 9835
+beamed sixteenth notes. 9836
+music flat sign. 9837
+music sharp sign. 9838
+anchor. 9875
+gear. 9881
+atom symbol. 9883
+soccer ball, 9917
+sun behind cloud. 9925.
+snowman without snow. 9924
+no entry. 9940
+
+emojis are characters from utf-8 character set. look like images or icons. they are letters/characters from unicode character set. can be displayed using entity numbers. A is &#65;. 
+128516 128525 128151 
+emojis are characters. can be copied, displayed and sized, just like any other character.
+
+
+
+
+URL. web address. words. IP address. names are easier to remember than numbers (not necessarily). web browsers request pages from web servers by using a url. address a document/data on the web. 
+scheme://prefix.domain:port/path/filename. scheme: type of internet service. domain prefix. internet domain name. port number at host. path at the server. name of document/resource.
+https. secure webpages. encrypted
+ftp. downloading/uploading files.
+file. file on computer
+
+url encoding. ascii character set. if a url contains characters outside the ascii set, the url has to be converted. url encoding converts non-ascii characters. replace non-ascii characters with a % followed by hexadecimal digits. urls cannot contain spaces. url encoding normally replaces a space with a + sign or %20. 
+
+
+
+xhtml. extensible hypertext markup language. xml-based html. 
+xml. markup language. documents marked up.  xhtml : html with xml. 
+xhtml.<!DOCTYPE> is mandatory. xmlns attribute in <html> is mandatory. <html>, <head>, <title>, <body> are mandatory. elements must be properly nested. elements must be closed. 
+<!DOCTYPE html><html xmlns="/index.html">...
+
+<input type="checkbox" name="vehicle" value="car" checked="checked" />
+
+
+
+form. collect user input. send to server for processing. 
+<form>element. container for different types of input elements. 
+there is input type button.
+
+<label for="fx">hello</label><br /><input type="text" id="fx" name="lol" /><br />
+default width of input field is 20 characters.
+
+<label>. screen-reader users. useful in selecting radio buttons or checkboxes. for and id do the binding.
+
+type radio. select one of a limited number of choices. <input type="radio" id="fx" name="hullp" value="coma" /><label for="fx">coma</label><br />
+
+type checkbox. select zero or more options of a limited number of choices. <input type="checkbox" id="fx" name="hullo" value="coma" /><label for="fx">coma</label><br />
+
+type submit. submit the form data to a form-handler. a file on the server with a script for processing input data. form-handler is specified in the form's action attribute. <form action="/action.js">...</form>
+
+each input field must have a name attribute to be submitted. if the name attribute is omitted, the value of the input field will not be sent at all. 
+
+action attribute. if omitted, the action is set to the current page. 
+
+target attribute. specify where to display the response that is received after submitting the form. 
+_blank. response displayed in a new window/tab.
+_self. response displayed in the current window.
+_parent response displayed in the full body of the window.
+iframe-name. response is displayed in a named iframe.
+<form action"/sever.js" target="_blank">
+
+method attrubute. specify the http method to be used when submitting the form data. <form action="/server.js" target="_blank" method="get"> with get, the form values are visible in the address bar after ? symbol. with post, the action file is displayed, not the values.
+
+
+get. append the form data to the url in name-value pairs. not to be used for sending sensitive data as the data is visible in the url. the length of url is limited to 2048 characters. useful for form submissions where a user wants to bookmark the result. 
+
+post. append form-data inside the body of the http request. no size limitations. cannot be bookmarked. sensitive or personal information.
+
+<form action="action.php" method="post" target="_blank" autocomplete="on" >
+
+novalidate attribute. boolean. the form-data/input should not be validated when submitted. 
+<form action="/action.php" method="post" target="_blank" novalidate >
+
+<select> element. <label for="xyz">hello</label><select id="xyz" name="coma"><option value="one">one</option>...</select> an option to be selected. drop-down list by default. 
+
+define pre-selected option. <option value="ol" selected>hi</option>
+
+specify the number of visible values. <select id="xyz" name="oo" size="2">
+
+allow multiple selections. <select id="xyz" name="oo" size="2" multiple>
+
+<textarea>. multiline input field. <textarea name="message" rows="10" cols="30">php return value with this disabled</textarea>
+
+<button type="button" onclick="alert()">c</button> <button type="submit">
+
+<fieldset>. group related data in a form. 
+<legend>. caption for the <fieldset> element. <form action="/action.php target="_blank" method="post"><fieldset><legend>hello</legend>...</fieldset>...</form>
+
+<datalist>. list of pre-defined options for <input> element. users will see a drop-down list of pre-defined options as they input data. list attribute of <input> element refers to the id attribute of the <datalist> element. <form ...><input list="ss"><datalist id="ss"><option value="one" />...</datalist></form>
+
+<output>. result of a calculation. eg. performed by a script. <form action="/action.php" oninput="x.value=parseInt(a.value)+parseInt(b.value);"><input type="range" id="f" name="a" value="40" /><input type="number" id="g" name="b" value="33" /><output name="x" for="a b"></output><br /><input type="submit" /></form>
+
+type. button. checkbox. color. date. datetime-local. email. file. hidden. image. month. number. password. radio. range. reset. search. submit. tel. text. time. url. week.
+
+type reset. reset all form values to their default values. <form><input type="text" id="dd" name="f" value="default" /><input type="reset" /></form>
+
+<label for="f">pick</label><input type="color" id="f" name="cola" />
+
+<label for="b">hi</label><input type="date" id="b" name="kola" />
+<input type="date" id="f" name="d" max="1989-1-31" /> <input type="date" id="g" name="ff" min="1998-2-2" />
+
+no-time zone date and time. <input type="datetime-local" id="d" name="dd" />
+
+hidden input. not visible to the user. include data that cannot be seen or modified by users when a form is submitted. private data. store database record. not to be used as a form of security. displayed in dev tools.
+<input type="hidden" id="g" name="ol" value="33" />
+
+
+<input type="month" id="dd" name="hel" />
+
+
+<input type="number" id="quanti" name="s" min="4" max="8" />
+
+input restrictions.
+checked. an input field should be pre-selected when the page loads.
+diabled. 
+max
+maxlength. maximum number of characters.
+min
+pattern. a regular expression to check the input value against. 
+readonly. 
+required.
+size. width in characters.
+step. legal number of intervals.
+value. default value. initial value.
+
+<input type="number" id="d" name="dd" min="4" max="44" step="10" value="3" />
+
+type range. a number whose exact value is not important. slider control. default range is 0 to 100. min. max. step attributes. <label for="d">ddd</label><input type="range" id="dd" name="dd" min="3" max="33" />
+
+
+<input type="search" id="r" name="dd" />
+
+
+<input type="tel" id="ee" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  placeholder="123-22-234" required/>
+
+
+<input type="url" id="homepage" name="home" />
+
+<input type="week" id="dd" name="lol" />
+
+
+
+
+readonly attribute. cannot be modified. user can tab to it. highlight it. copy the text from it.value will be send when submitting the form. <input type="text" id="d" name="e" value="ka" readonly />
+
+disabled attrubute. unsuable. un-clickable. value will not be sent when submitting the form.
+
+
+size attribute. text. search. tel. url. email. password.
+
+
+
+maxlength attribute. the input field will not accept more than the specified number of characters. does not provide any feedback. js code to listen in and alert the user required. <input type="text" id="d" name="e" maxlength="44" size="3" />
+
+min and max attributes. create a range of legal values. number. range. date. datetime-local. month. time. week.
+
+multiple attribute. email file. <label for="dd">file</label><input type="file" id="dd" name='d" multiple />
+
+
+pattern attribute. a regular expression that the input field's value is checked against when the form is submitted. text. date. search. url. tel. email and password. use global title attribute to describe the pattern to help the user. 
+input field that can contain only three letters. <input type="text" id="d" name="country_code" pattern="[A-Za-z]{3}" title="three-letter country code" />
+
+placeholder attribute. short hint. description of expected value. sample value or short description of the expected format.  text. search. url. tel. email. password. 
+
+required attribute. text. search. url. tel. email. password. date pickers. number. checkbox. radio. file.
+
+step attribute. number. range. date. datetime-local. month. time. week.
+
+
+input restrictions are not foolproof. js provides ways to add illegal input. to safely restrict input, it must also be checked by the receiver/server.
+
+autofocus attribute. automatically focus when the page loads. <input type="text" id="e" name="dd" autofocus />
+
+always specify the height and width attributes for images. if they are set, the space required for the image is reserved when the page is loaded.
+<input type="image" src="cola.gif" alt="o" width="33" height"33" />
+
+form attribute. specify the form an <input> element belongs to. the value is equal to the id attribute of that <form> element. <form id="dd" ...>...</form><label for="r">pp</label><input type="text' id="r" name="gf" form="dd" />
+
+formaction attribute. specify the url of the file that will process the input then the form is submitted. overrides the action attribute of the <form> element. works with submit and image types of input.
+<form action="a1.php>...<input type="submit" value="d" /><input type="submit" formaction="a2/php"  />
+
+formenctype attribute. how the form-data should be encoded when submitted for forms with method="post". overrides the enctype of the <form> element. submit and image types of input.
+<form action="/a.php" method="post">...<input type="submit" /> <input type="submit" formenctype="multipart/form-data" value="lol" /></form>
+
+formmethod attribute. define the http method for sending form-data to the action url. overrides the method attribute of the <form> element. submit and range types of input.
+
+formtarget attribute. name or a keyword that indicates where to display the response that is received after submitting the form. overrides the target attribute of the <form> element. submit and image types of input.
+
+formnovalidate. formnovalidate="formnovalidate" . overrides the novalidate attribute of the <form> element. submit type input.
+
+novalidate input. <form>. all of the form-data should not be validated when submitted.  <form ... novalidate>
+
+
+
+<canvas> element. draw graphics on a web page. javascript. container for graphics. js draws the graphics. <canvas id="dd" width="22" height="33" ></canvas>
+
+<script>var c=document.getElementById('3d'); var cc=c.getContext('2d'); cc.moveTo(9,2); cc.lineTo(200,100); cc.stroke();</script>
+
+<script>var c=document.getElementById('3d'); var cc=c.getContext('2d'); cc.beginPath(); cc.arc(93,22,10,0,2*Math.PI);cc.stroke();</script>
+
+<script>var c=document.getElementById('3d'); var cc=c.getContext('2d');cc.font="30px Arial"; cc.fillText("dsds",10,30);</script>
+
+<script>var c=document.getElementById('3d'); var cc=c.getContext('2d'); cc.font="10px arial"; cc.strokeText('ds',1,2);</script>
+
+<script>var c=document.getElementById('3d'); var cc=c.getContext('2d'); vat hm=cc.createLinearGradient(0,0,200,0); hm.addColorStop(0,'red'); hm.addColorStop(1,'white');  cc.fillStyle=hm; cc.fillRect(10,10,150,80);</script>
+
+
+<script>var c=document.getElementById('3d'); var cc=c.getContext('2d'); cc.moveTo(9,2); cc.lineTo(200,100); cc.stroke();</script>
+
