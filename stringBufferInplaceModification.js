@@ -1,0 +1,2 @@
+const a1=Buffer.from("hello");  const a2=a1.slice(1,a1.length);
+console.log(a2.toString()); a2.fill('#',1,3); console.log(a1.toString(),a2.toString()); a1.fill('lol',2,a1.length);console.log(a1.toString(),a2.toString());

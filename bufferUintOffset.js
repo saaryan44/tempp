@@ -1,0 +1,1 @@
+let x=Buffer.alloc(4); x.writeUInt8(0x63,0); x.writeUInt8(0x64,1); x.write("hi",2,"utf-8"); x.writeUInt8(0x74,3); console.log(x.readUInt8(2));console.log(x.toString()); const m=require('string_decoder').StringDecoder; const n=new m('utf8'); console.log(n.write(x));

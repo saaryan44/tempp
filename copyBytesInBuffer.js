@@ -1,0 +1,1 @@
+let a1=Buffer.from("hello world out there"); let a2=Buffer.alloc(5); a1.copy(a2);console.log(a1.toString(),a2.toString(),(()=>{a2.fill('3',0,3); return [a1.toString(),a2.toString()]})());

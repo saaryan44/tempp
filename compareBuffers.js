@@ -1,0 +1,1 @@
+const a=Buffer.from('1'); const b=Buffer.from('2'); const c=Buffer.alloc(a.length); a.copy(c); console.log(a.compare(b),b.compare(a),c.compare(a));
